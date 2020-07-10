@@ -1,0 +1,15 @@
+$phone-max-width: 499.9px;
+$tablet-min-width: 500px;
+
+.phone-hide {
+    @media screen and (max-width: $phone-max-width) {
+        display: none;
+    }
+}
+
+.phone-show {
+    display: none;
+    @media screen and (max-width: $phone-max-width) {
+        display: initial;
+    }
+}

@@ -1,0 +1,81 @@
+.calendarview {
+    min-width: 1050px;
+    width: 100%;
+
+    border-spacing: 0;
+    border-collapse: separate;
+    table-layout: fixed;
+    box-sizing: border-box;
+
+    th {
+        padding: 0.5rem;
+        text-align: center;
+        font-weight: 500;
+        font-size: 10px;
+        color: $cx-theme-primary-color;
+        position: sticky;
+        background: white;
+        top: 0;
+        z-index: 10;
+        border-bottom: 1px solid lightgray;
+        background-clip: border-box;
+    }
+
+    tbody tr:first-child td {
+        border-top: none;
+    }
+
+    td {
+        position: relative;
+        border-top: 1px solid lightgray;
+        border-left: 1px solid lightgray;
+        font-size: 12px;
+        height: 150px;
+        width: 150px;
+        vertical-align: top;
+
+        &:first-child {
+            border-left: none;
+        }
+
+        &.selected {
+            //background: orange;
+        }
+    }
+
+    .date {
+        font-weight: 500;
+        font-size: 10px;
+        color: $cx-theme-secondary-color;
+        text-align: center;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        top: 4px;
+    }
+
+    .apt {
+        padding: 3px;
+        margin: 3px;
+        border: 1px solid transparent;
+        color: inherit;
+        display: block;
+
+        &:hover {
+            border: 1px solid lightgray;
+            text-decoration: none;
+        }
+    }
+
+    .today .date {
+        color: white;
+        background-color: $cx-theme-secondary-color;
+    }
+}
+
+.appointment {
+    border-bottom: 1px solid rgba(white, 0.1);
+}

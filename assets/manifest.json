@@ -1,0 +1,20 @@
+{
+    "name": "Wealth Management",
+    "short_name": "Wealth Management",
+    "icons": [
+        {
+            "src": "/assets/logo/logo144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/logo/logo512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#002245"
+}

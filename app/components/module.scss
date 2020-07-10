@@ -1,0 +1,39 @@
+.module {
+    padding: 16px;
+    color: $cx-theme-primary-color;
+
+    padding-left: 68px;
+    position: relative;
+    display: block;
+
+    .cxb-icon {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        margin-top: -24px;
+        width: 48px;
+        height: 48px;
+        font-size: 48px;
+        line-height: 1;
+    }
+
+    &:hover {
+        text-decoration: none;
+        background: rgba(lightgray, 0.2);
+    }
+
+    &.cxs-active {
+        font-weight: normal;
+        background: lightgray;
+    }
+}
+
+.module_name {
+    font-weight: 600;
+}
+
+.module_desc {
+    color: gray;
+    margin-top: 3px;
+    font-size: 12px;
+}

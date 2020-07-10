@@ -1,0 +1,7 @@
+.cxb-hscrollable {
+    overflow-x: auto;
+
+    &.cxs-fit {
+        overflow-x: visible;
+    }
+}

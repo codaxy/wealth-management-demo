@@ -1,0 +1,25 @@
+.structure_charts {
+    padding: 24px;
+    .cxb-svg {
+        // margin-right: 64px;
+        width: 150px;
+        height: 150px;
+    }
+    .cxe-legend-entry {
+        padding: 2px 2px 2px 20px;
+        font-size: 10px;
+        margin: 5px 0 0;
+    }
+    .cxb-legend {
+        max-width: 80px;
+        margin-left: 8px;
+    }
+}
+
+.chart_title {
+    text-align: center;
+    color: $cx-theme-secondary-color;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 0 0 8px;
+}

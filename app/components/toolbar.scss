@@ -1,0 +1,21 @@
+.toolbar {
+    box-sizing: border-box;
+    position: relative;
+    flex-shrink: 0;
+
+    &.bordered {
+        border-bottom: 1px solid lightgray;
+    }
+
+    &.underline {
+        &:before {
+            content: ' ';
+            position: absolute;
+            border-top: 1px solid lightgray;
+            left: 0;
+            top: 100%;
+            right: 0;
+            margin-top: -1px;
+        }
+    }
+}

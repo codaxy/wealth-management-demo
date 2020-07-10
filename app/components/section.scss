@@ -1,0 +1,15 @@
+.section {
+    background: white;
+
+    &:not(:last-child) {
+        border-bottom: 1px solid lightgray;
+    }
+
+    &.padded {
+        padding: 16px 24px;
+
+        .subtitle ~ & {
+            padding-top: 0;
+        }
+    }
+}

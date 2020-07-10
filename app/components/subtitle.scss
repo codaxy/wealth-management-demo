@@ -1,0 +1,11 @@
+.subtitle {
+    align-self: center;
+    font-weight: 500;
+    margin-left: 24px;
+    line-height: 42px;
+    //color: #188904;
+
+    &.multiline {
+        line-height: 1.1;
+    }
+}

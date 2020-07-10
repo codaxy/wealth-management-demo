@@ -1,0 +1,47 @@
+$cx-include-global-rules: true;
+
+$cx-theme-primary-color: #002245;
+$cx-theme-secondary-color: #188904;
+$cx-theme-negative-color: #d70004;
+$cx-theme-positive-color: #22bd05;
+
+@import '~cx-theme-material/src/variables';
+
+$cx-element-style-map: cx-deep-map-merge(
+    $cx-element-style-map,
+    (
+        html: (
+            overflow: hidden,
+            height: 100%,
+        ),
+        a: (
+            color: $cx-theme-secondary-color,
+            touch-action: manipulation,
+        ),
+        button: (
+            touch-action: manipulation,
+        ),
+    )
+);
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+@import '~cx-theme-material/src/index';
+
+.cxe-grid-data {
+    td {
+        &.negative-value {
+            color: $cx-theme-negative-color;
+        }
+        &.positive-value {
+            color: $cx-theme-positive-color;
+        }
+    }
+}
+@import 'components/index';
+@import 'layout/index';
+@import 'routes/index';
+
+@import './mods.scss';
